@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.23.72.51:3306/gmall_pms
+    username: root
+    password: luyiloveyou2019!
+  redis:
+    host: 10.23.72.51:6379
+

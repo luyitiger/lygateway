@@ -1,0 +1,28 @@
+package com.luyigu.gmall.pms.service.impl;
+
+import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.java.core.bean.PageVo;
+import com.java.core.bean.Query;
+import com.java.core.bean.QueryCondition;
+
+import com.luyigu.gmall.pms.dao.SkuInfoDao;
+import com.luyigu.gmall.pms.entity.SkuInfo;
+import com.luyigu.gmall.pms.service.SkuInfoService;
+
+@Service("skuInfoService")
+public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoDao, SkuInfo> implements SkuInfoService {
+
+    @Override
+    public PageVo queryPage(QueryCondition params) {
+        IPage<SkuInfo> page = this.page(
+                new Query<SkuInfo>().getPage(params),
+                new QueryWrapper<>()
+        );
+
+        return new PageVo(page);
+    }
+
+}
