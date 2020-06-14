@@ -12,4 +12,9 @@ spring:
     password: luyiloveyou2019!
   redis:
     host: 10.23.72.51:6379
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/pms/**/*.xml
 

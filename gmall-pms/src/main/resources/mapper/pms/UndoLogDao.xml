@@ -9,7 +9,7 @@
         <result property="branchId" column="branch_id"/>
         <result property="xid" column="xid"/>
         <result property="context" column="context"/>
-        <result property="rollbackInfo" column="rollback_info"/>
+    <!--    <result property="rollbackInfo" column="rollback_info"/>-->
         <result property="logStatus" column="log_status"/>
         <result property="logCreated" column="log_created"/>
         <result property="logModified" column="log_modified"/>
