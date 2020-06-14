@@ -1,20 +1,2 @@
-server:
-  port: 8084
-spring:
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.23.72.51:3306/guli_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: luyiloveyou2019!
-  redis:
-    host: 10.23.72.51:6379
-mybatis-plus:
-  global-config:
-    db-config:
-      id-type: auto
-  mapper-locations: classpath:mapper/pms/**/*.xml
+
 
